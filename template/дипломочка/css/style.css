@@ -1,0 +1,536 @@
+:root {
+    --white: #FFFFFF;
+    --basic: #2BB1B4;
+    --basic-hover: #108C8E;
+    --basic-disabled: #95D8D9;
+    --basic-text: #164747;
+    --secondary-text: #8AA3A3;
+    --primary-text-disabled: #A2B5B5;
+    --secondary-text-disabled: #D0DADA;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+.card-category {
+    height: 300px;
+    width: 289px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    border-radius: 20px;
+    box-shadow: 0px 2px 8px 0px rgba(170, 148, 143, 0.2);
+
+}
+
+.card-item {
+    height: 380px;
+    width: 289px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    border-radius: 20px;
+    box-shadow: 0px 2px 8px 0px rgba(170, 148, 143, 0.2);
+}
+
+.card__img img {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+
+}
+
+.card__heart img {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.card__ball img {
+    top: 10px;
+    left: 10px;
+    position: absolute;
+}
+
+.card__purpose {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    height: 100%;
+    line-height: 1.5;
+}
+
+.card__info {
+    gap: 10px;
+    padding: 16px 0px 20px 0px;
+}
+
+.card__inside {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: left;
+    padding: 0px 20px 0px 20px;
+    gap: 10px;
+}
+
+.card__price del {
+    color: var(--primary-text-disabled);
+    margin-left: 8px;
+}
+
+.card__price,
+.card__name {
+    font-size: 20px
+}
+
+
+.card__button {
+    width: 100%;
+}
+
+/*==================================================*/
+.body {
+    font-family: 'Inter', "Arial", sans-serif;
+    font-weight: 500;
+    line-height: 1.5;
+    color: var(--basic-text);
+    background: var(--white);
+}
+
+.wrapper {
+    min-height: 100%;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    max-width: 1216px;
+    width: 100%;
+    margin: 0 auto;
+    /*0adding: 0 15px;*/
+    height: 100%;
+}
+
+.button {
+    padding: 10px 20px 10px 20px;
+    gap: 4px;
+    border-radius: 100px;
+    background-color: #2BB1B4;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 19.36px;
+}
+
+.header {
+    line-height: 19.36px;
+}
+
+.header__shell {
+    background: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+
+}
+
+.header__top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: 100%;
+    background: var(--basic-hover);
+    /*height: 100%;*/
+    color: var(--white);
+}
+
+.header__top-text {
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: var(--basic-hover);*/
+}
+
+.header__mid {
+    color: var(--basic-text);
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    padding: 20px 0px 0px 0px;
+}
+
+.header__mid-ul1,
+.header__mid-ul2,
+.header-ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header_mid-adress,
+.header__tel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+}
+
+.header__bottom-ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-menu * {
+    z-index: 100000;
+}
+
+
+.dropdown-button {
+    /*background-color: var(--white);
+    
+
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;*/
+    height: 52px;
+}
+
+.dropdown-menu {
+    margin-top: 10px;
+    padding: 10px 10px 0 10px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+    background-color: var(--white);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 20px;
+    border: 2px solid var(--basic);
+    gap: 10px;
+}
+
+.dropdown-menu.show {
+    display: block;
+    z-index: 2;
+}
+
+.dropdown-menu a {
+    color: black;
+    min-height: 32px;
+    text-decoration: none;
+    display: block;
+    width: 280px;
+}
+
+.dropdown-menu a:hover {
+    color: var(--basic-hover);
+}
+
+
+
+
+
+
+.header__bottom-ul2 {
+    border-radius: 50px;
+    border: 2px;
+    border-color: #2BB1B4;
+    max-width: 607px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.header__input {
+    width: 607px;
+    height: 52px;
+    display: block;
+    border: 2px solid var(--basic);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 50px;
+    position: relative;
+}
+
+.header__input input {
+    width: 482px;
+    margin-left: 10px;
+}
+
+.header__bottom-button2 {
+    height: 52px;
+}
+
+.header__bottom-icons {
+    display: flex;
+    gap: 20px;
+}
+
+.header__bottom-ul {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.header__bottom-button1 {
+    height: 100%;
+}
+
+/*=======================================================*/
+.swiper {
+    margin-top: 30px;
+    height: 500px;
+    width: 1215px;
+}
+
+.swiper-slide {
+    background-color: #108C8E;
+    height: 94%;
+    width: 100%;
+    height: 500px;
+    width: 1215px;
+    border-radius: 20px;
+    z-index: -1000;
+}
+
+/*.swiper-button-prev,
+.swiper-button-next {
+    background: var(--white);
+    min-width: 50px;
+    min-height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}*/
+.swiper-button-prev {
+    content: url("../images/left.png");
+    min-width: 40px;
+    min-height: 40px;
+}
+
+.swiper-button-next {
+    content: url("../images/right.png");
+    min-width: 40px;
+    min-height: 40px;
+}
+
+/*============================================================*/
+.section2 {
+    padding-top: 80px;
+}
+
+.section2__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section2__bottom {
+    padding-top: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+.liders,
+.stock,
+.watched {
+    padding-top: 80px;
+}
+
+.liders__top,
+.stock__top,
+.watched__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.liders__bottom,
+.stock__bottom,
+.watched__bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 40px;
+}
+
+.watched__more {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.wathed__more-button {
+    max-width: 196px;
+}
+
+/*=============================================================*/
+
+
+.questions {
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.questions__teme {
+    margin-bottom: 40px;
+}
+
+.container1 {
+    width: 906px;
+}
+
+.container1 .box {
+    position: relative;
+    margin-bottom: 10px;
+    width: 100%;
+
+    /* Нижний отступ между элементами аккордеона */
+}
+
+.container1 .box:last-child {
+    margin-bottom: 0;
+    /* Для последнего элемента нижний отступ убираем */
+}
+
+.container1 .box .label {
+    position: relative;
+    /*padding:;*/
+    /* Внутренний отступ для видимой части */
+    background-color: var(--white);
+    /* Цвет элемента аккордеона */
+    font-size: 24px;
+    color: var(--basic-text);
+    /* Цвет шрифта элемента аккордеона */
+    cursor: pointer;
+    /* Меняем курсор при наведении */
+    border-bottom: 2px solid var(--basic);
+}
+
+.container1 .box .label::after {
+    content: url("../icons/more-up.png");
+    /* Задаем иконку "+" для элемента аккордеона */
+    position: absolute;
+    top: 50%;
+    /* Выравнивание по центру */
+    transform: translateY(-50%);
+    right: 20px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.container1 .box.active .label::after {
+    content: url("../icons/more-down.png");
+
+    /* Меняем иконку на "-" при нажатии на элемент */
+}
+
+.container1 .box .content {
+    position: relative;
+    background-color: #fff;
+    /* Цвет фона контента */
+    overflow: hidden;
+    max-height: 0;
+    /* Скрываем контент */
+    transition: 0.3s;
+    /* Для плавности анимации */
+}
+
+.container1 .box .content p {
+    padding: 20px;
+}
+
+
+/*===========================================================================================*/
+.footer {
+    border-top: 2px solid var(--basic);
+}
+
+.footer__top {
+    height: 271px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer__logo>*,
+.footer__ul>*,
+.footer__socials>* {
+    margin-bottom: 20px;
+}
+
+.footer__ul {
+    display: flex;
+    gap: 80px;
+
+}
+
+.footer__ul1,
+.footer__ul2,
+.footer__socials {
+    display: flex;
+    flex-direction: column;
+}
+.footer__ul1,
+.footer__ul2{
+    gap: 15px;
+}
+
+.footer__line {
+    height: 2px;
+    width: 100%;
+    border-top: 2px solid var(--basic);
+}
+
+.footer__bottom-shell {
+    height: 112px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__info {
+    display: flex;
+    gap: 20px;
+}
+.footer__adress,
+.footer__telephone{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
